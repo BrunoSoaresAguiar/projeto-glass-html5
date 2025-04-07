@@ -1,53 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<!--begin head-->
+
 <head>
-    <meta charset= "UTF-8"/>
+    <meta charset="UTF-8" />
     <title>Fotos do Google Glass</title>
-    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
-</head>
+    <link rel="icon" type="image/x-icon" href="_imagens/glass-oculos-preto-peq.png"> <!--Icone do site-->
+
+    <link rel="stylesheet" href="_css/estilo.css"> <!-- Arquivo CSS -->
+    <script language="javascript" src="_javascript/funcoes.js"></script> <!-- Arquivo JavaScript -->
+<!--end head-->
+<!--begin body-->
 <body>
-    
-<div id="interface">
 
-    <header id="cabecalho">
+    <div id="interface">
+        <!--begin cabecalho-->
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass </h1>
+                <h2> A revolução do Google está chegando</h2>
+            </hgroup>
 
-    <hgroup>
-        <h1>Google Glass </h1>
-        <h2> A revolução do Google está chegando</h2>
-    </hgroup>
-Google Glass
-A revolução do Google está chegando
+            <img id="icone" src="_imagens/fotos.png" />
 
-[AQUI ENTRA UMA FOTO]
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/fotos.png')"> <a
+                            href="index.html">Home</a>
+                    </li>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('_imagens/fotos.png')"> <a href="specs.html">Especificações</a> </li>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/fotos.png')"> <a
+                            href="fotos.html">Fotos</a>
+                    </li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/fotos.png')">
+                        <a href="fotos.html"> <a href="multimidia.html">Multimídia</a>
+                    </li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a
+                            href="fale-conosco.html">Fale
+                            conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+<!--end cabecalho-->
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
-    </header>
+        Glass > Fotos
+        Galeria de Imagens do Google Glass
+        por Gustavo Guanabara
+        Atualizado em 01/Maio/2013
 
+        Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google
+        Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das
+        fotos para ver uma versão ampliada e com uma breve descrição.
 
-Glass > Fotos
-Galeria de Imagens do Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+        - Agenda e lembretes
+        - Sergey Brin usando o Glass
+        - Leve e compacto
+        - Sensação de uma tela de 50"
+        - Vários tipos de lente
+        - Informações importantes
 
-Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.
+        <!--begin rodape-->
+        <footer id="rodape">
+            <p>Copyright &copy; 2025 - by Bruno Aguiar <br>
 
-- Agenda e lembretes
-- Sergey Brin usando o Glass
-- Leve e compacto
-- Sensação de uma tela de 50"
-- Vários tipos de lente
-- Informações importantes
-
-Copyright 2013 - by Gustavo Guanabara
-
-Facebook | Twitter
-</div>
+                <a href="http://facebook.com" target="_blank">Facebook</a> | <a href="http://facebook.com"
+                    target="_blank">Twitter</a>
+            </p>
+        </footer>
+        <!--end rodape-->
+    </div>
 </body>
 
 </html>
