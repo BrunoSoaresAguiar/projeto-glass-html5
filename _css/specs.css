@@ -11,9 +11,3 @@ iframe#frame-spec{
     overflow: hidden;
 }
 
-iframe#frame-spec::-webkit-scrollbar {
-    display: none; /* Chrome, Safari e Edge */
-}
-::-webkit-scrollbar{
-    display: none;;
-}
