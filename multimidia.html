@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,15 +8,19 @@
     <title>Multimídia</title>
     <link rel="icon" type="image/x-icon" href="_imagens/glass-oculos-preto-peq.png"> <!--Icone do site-->
 
-    <link rel="stylesheet" href="_css/estilo.css"> <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="_css/estilo.css"> <!-- Arquivo CSS GERAL -->
+    <link rel="stylesheet" href="_css/media.css"> <!-- Arquivo CSS especifico -->
+
     <script language="javascript" src="_javascript/funcoes.js"></script> <!-- Arquivo JavaScript -->
+</head>
 <!--end head-->
 
 <!--begin body-->
+
 <body>
 
     <div id="interface">
-<!--begin cabecalho-->
+        <!--begin cabecalho-->
         <header id="cabecalho">
             <hgroup>
                 <h1>Google Glass </h1>
@@ -34,41 +37,59 @@
                     </li>
                     <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
                         onmouseout="mudaFoto('_imagens/multimidia.png')"> <a href="specs.html">Especificações</a> </li>
-                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"> <a
-                            href="fotos.html">Fotos</a>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')">
+                        <a href="fotos.html">Fotos</a>
                     </li>
-                    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')">
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
+                        onmouseout="mudaFoto('_imagens/multimidia.png')">
                         <a href="fotos.html"> <a href="multimidia.html">Multimídia</a>
                     </li>
-                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a
-                            href="fale-conosco.html">Fale
-                            conosco</a></li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')">
+                        <a href="fale-conosco.html">Fale
+                            conosco</a>
+                    </li>
                 </ul>
             </nav>
         </header>
-<!--end cabecalho-->
-
-Glass > Multimídia
-Sons e Vídeos
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+        <!--end cabecalho-->
 
 
-Áudio e Vídeo
+        <section id="corpo-full">
+            <article id="noticia-principal">
 
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Glass > Multimídia</h3>
+                        <h1>Sons e Vídeos</h1>
+                        <h2>Por: Bruno Aguiar</h2>
+                        <h3 class="direita">Atualizado em 15/Abril/2025</h3>
+                    </hgroup>
+                </header>
 
-<!--begin rodape-->
-<footer id="rodape">
-    <p>Copyright &copy; 2025 - by Bruno Aguiar <br>
+                <!--Div personalizada para ficar com moldura da TV-->
+                <div id="tv-radio">
+                    <audio id="musica" controls="controls">
+                        <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg" />
+                        Desculpe, mas não foi possível carregar o áudio.
+                    </audio>
+                    <video id="filme" controls="controls" poster="_imagens/video-mini03.jpg">
+                        <source src="_media/getting-started.mp4" type="video/mp4" />
+                        Desculpe, mas não foi possível carregar o vídeo.
+                    </video>
+                </div>
+                <!--Div end-->
+            </article>
+        </section>
+    </div>
+    <!--begin footer-->
+    <footer id="rodape">
+        <p>Copyright &copy; 2025 - by Bruno Aguiar <br>
 
-        <a href="http://facebook.com" target="_blank">Facebook</a> | <a href="http://facebook.com"
-            target="_blank">Twitter</a>
-    </p>
-</footer>
-<!--end rodape-->
-</div>
+            <a href="http://facebook.com" target="_blank">Facebook</a> | <a href="http://facebook.com"
+                target="_blank">Twitter</a>
+        </p>
+    </footer>
+    <!--end footer-->
 </body>
 
 </html>
